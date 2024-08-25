@@ -6,6 +6,10 @@
   <title>Aslu Entertainment™</title>
   <link rel="icon" href="Photos/AE.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </head>
 <body>
   <header>
@@ -24,23 +28,15 @@
 
   <main>
     <div class="main-content">
-      <h3 class="main-heading">Highlights</h3>
-      <div class="image-container">
-        <div class="image">
-          <a href="#">
-            <img src="Photos/coming.png" alt="Imagen 1">
-          </a>
-        </div>
-        <div class="image">
-          <a href="S&F.html">
-            <img src="Photos/sweet prince.png" alt="Imagen 2">
-          </a>
-        </div>
-        <div class="image">
-          <a href="#">
-            <img src="Photos/coming.png" alt="Imagen 3">
-          </a>
-        </div>
+      <h3 class="main-heading">Sweet Prince & Fancy Queen</h3>
+      <div class="gradient-text">Fantasy, Comedy, Romance</div>
+
+      <div class="carousel">
+        <img src="Photos/S&F.png" alt="S&F">
+        <img src="Photos/Read among the stars.png" alt="Read among the stars">
+        <img src="Photos/Unravel the true intentions.png" alt="Unravel the true intentions">
+        <img src="Photos/Rachel choice.png" alt="Rachel choice">
+        <img src="Photos/Read now.png" alt="Read now">
       </div>
     </div>
   </main>
@@ -50,5 +46,21 @@
       <p>All rights reserved © 2023 Aslu Entertainment</p>
     </div>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
 </body>
 </html>
+
