@@ -103,6 +103,27 @@ footer {
   font-size: 12px;
 }
 
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.1);
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
 /* Media queries para responsive design */
 @media (max-width: 768px) {
   .navbar {
