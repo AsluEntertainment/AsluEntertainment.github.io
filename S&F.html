@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aslu Entertainment™</title>
-  <link rel="icon" href="AE.ico" type="image/x-icon">
+  <link rel="icon" href="Photos/AE.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
@@ -15,13 +15,13 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="logo.png" alt="Logo">
+        <img src="Photos/logo.png" alt="Logo">
       </div>
       <div class="nav-links">
-       <a href="index.html">Start</a>
+        <a href="index.html">Start</a>
         <a href="novels.html">Novels</a>
-        <a href="webtoon.html">webtoon</a>
-        <a href="mystery.html">mystery</a>
+        <a href="comics.html">Comics</a>
+        <a href="movies.html">Movies</a>
       </div>
     </nav>
   </header>
@@ -32,11 +32,11 @@
       <div class="gradient-text">Fantasy, Comedy, Romance</div>
 
       <div class="carousel">
-        <img src="S&F.png" alt="S&F">
-        <img src="Read among the stars.png" alt="Read among the stars">
-        <img src="Unravel the true intentions.png" alt="Unravel the true intentions">
-        <img src="Rachel choice.png" alt="Rachel choice">
-        <img src="Read now.png" alt="Read now">
+        <div><img src="Photos/S&F.png" alt="S&F"></div>
+        <div><img src="Photos/Read among the stars.png" alt="Read among the stars"></div>
+        <div><img src="Photos/Unravel the true intentions.png" alt="Unravel the true intentions"></div>
+        <div><img src="Photos/Rachel choice.png" alt="Rachel choice"></div>
+        <div><img src="Photos/Read now.png" alt="Read now"></div>
       </div>
     </div>
   </main>
@@ -57,7 +57,27 @@
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+          {
+            breakpoint: 768, // tabletas y teléfonos grandes
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false, // Ocultar flechas en pantallas pequeñas
+              dots: true
+            }
+          },
+          {
+            breakpoint: 480, // teléfonos pequeños
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true
+            }
+          }
+        ]
       });
     });
   </script>
