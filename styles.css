@@ -80,6 +80,18 @@ main {
   transform: translateY(-10px);
 }
 
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+}
+
+
 footer {
   background: #FFF;
   padding: 10px 0;
