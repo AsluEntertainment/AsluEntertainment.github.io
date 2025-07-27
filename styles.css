@@ -21,8 +21,9 @@ header {
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* <- evita que se partan */
   gap: 10px;
+  overflow-x: auto; /* para que se deslicen si no caben */
 }
 
 .nav-links a {
